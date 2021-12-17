@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title%}VIP URL{% endblock%}
+
+{% block content%}
+
+<form action="#", method="post">
+    <label for="longurl">Enter an http:// URL:</label>
+    <input type="url" name="longvip" id="longurl"
+    placeholder="https://exmaple.com"
+    pattern="https://.*" size="50" maxlength="250"
+    required>
+    <br>
+
+
+    <label for="shorturl">Enter your ID:</label>
+    <input name="shortvip" id="shorturl"
+    placeholder="MYID123">
+    <br>
+    <input type="submit" value="submit">
+
+</form>
+{% endblock %}

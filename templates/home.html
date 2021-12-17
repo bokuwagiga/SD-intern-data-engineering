@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title%}shorten URL{% endblock%}
+
+{% block content%}
+<a href="http://127.0.0.1:5000/vipurl"><input type="submit" name="openvip" value="GET VIP URL" style="float: right;" class="btn btn-primary"></a>
+<form action="#", method="post">
+    <label for="url">Enter an http:// URL:</label>
+    <input type="url" name="nm" id="url"
+    placeholder="https://exmaple.com"
+    pattern="https://.*" size="50" maxlength="250"
+    required>
+    <br>
+    <input type="submit" value="submit" class="btn btn-primary">
+
+
+</form>
+{% endblock %}
